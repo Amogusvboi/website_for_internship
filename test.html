@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Modern Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom styles for the page */
+    body {
+      background-color: #333;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Custom styles for the navigation bar */
+    .navbar {
+      background-color: transparent;
+      color: white;
+      font-family: "Marvel", sans-serif;
+    }
+
+    .navbar-brand img {
+      height: 30px;
+      width: auto;
+      margin-right: 10px;
+      filter: invert(100%);
+    }
+
+    .navbar .btn {
+      color: white;
+      border: none;
+    }
+
+    .navbar .btn-yellow {
+      background-color: darkgoldenrod;
+    }
+
+    /* Custom styles for the Sign Up button */
+    .btn-signup {
+      color: white;
+      border: none;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-signup::before {
+      content: "";
+      position: absolute;
+      top: -100%;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      pointer-events: none;
+      z-index: -1;
+      transform: rotate(-45deg);
+      transition: all 0.4s;
+    }
+
+    .btn-signup:hover {
+      color: black;
+    }
+
+    .btn-signup:hover::before {
+      top: 0;
+      left: 0;
+      opacity: 1;
+    }
+
+    /* Container styles */
+    .container {
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+      <!-- Add your sidebar content here -->
+    </div>
+    <div class="main-content">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <img src="menu-bar.png" alt="Logo">
+        </a>
+        <div class="ml-auto">
+          <button class="btn btn-outline-light mr-2 btn-signup">Sign Up</button>
+          <button class="btn btn-yellow">Log in</button>
+        </div>
+      </nav>
+
+      <!-- Add your page content here -->
+      <h1>Welcome to My Website</h1>
+      <p>В мире Fortnite воинов много,
+        Битвы сражаются и раны наносят,
+        Под звуки выстрелов гремят оружия,
+        Герои сражаются за победу свою.
+        
+        На острове широком воюют отважно,
+        В каждом бою их сила их знамя.
+        Приключений море, опасности встречают,
+        В Fortnite герои свою судьбу выбирают.
+        
+        Создай свой персонаж, своего героя,
+        В битву вступай, и смело иди.
+        Строй союзы, к стратегии приди,
+        В Fortnite ты победой сияй.
+        
+        Сражайся с друзьями, бейся в команде,
+        Стройте крепости, защищайтесь от врагов.
+        Великолепие Fortnite в твоих руках,
+        Покажи всем, что ты настоящий герой.
+        
+        Так встань на поле битвы, в Fortnite играй,
+        Сражайся смело, не останавливайся.
+        Покоряй острова, достигай вершин,
+        В мире Fortnite будь настоящим победителем.</p>
+      <p>Phasellus ultricies metus ut purus vestibulum, eget fermentum lorem iaculis. In eget nisi non justo pharetra
+        lacinia et vitae elit. Ut ac lorem a magna tristique suscipit eu ut lectus. Proin fermentum aliquet ipsum sed
+        bibendum.</p>
+    </div>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
